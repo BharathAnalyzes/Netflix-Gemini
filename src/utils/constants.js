@@ -14,7 +14,17 @@ export const API_OPTIONS= {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NTRhMmM5NTk5NDgyOWFkMjI2NDI5MTJhNTFmZDdjNSIsIm5iZiI6MTcyNTg5MDYyMy44NDIzNDgsInN1YiI6IjY2ZGVmNmUzYTU1NjU2OGRlZDNhZGMwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.PY5L84csrxec-nFCrpolbIJOOT06GZilTbzd0s2aH5A'
+      //Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NTRhMmM5NTk5NDgyOWFkMjI2NDI5MTJhNTFmZDdjNSIsIm5iZiI6MTcyNTg5MDYyMy44NDIzNDgsInN1YiI6IjY2ZGVmNmUzYTU1NjU2OGRlZDNhZGMwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.PY5L84csrxec-nFCrpolbIJOOT06GZilTbzd0s2aH5A'
+      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY,
     }
   };
 
+  export const SUPPORTED_LANGUAGE =[
+            {identifier: "en",name:"English"},
+            {identifier: "telugu",name:"Telugu"},
+            {identifier: "spanish",name:"Spanish"},
+        ];
+
+//export const OPENAI_KEY="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"    
+//export const OPENAI_KEY="AIzaSyB66X9fIOhJimJLvIXB_zZNQJgsnXdEGNU";
+export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY;

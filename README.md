@@ -41,6 +41,10 @@
 - TMDM Image CDN URL
 - Made the browse page amazing
 - use Popular,TopRated,Upcoming custom hooks
+- Gpt Search page
+- Gpt search bar
+- Multi- Language Feature in our APP
+- Integrate GPT API's
 
 
 
